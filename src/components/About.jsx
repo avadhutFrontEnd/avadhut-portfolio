@@ -56,14 +56,21 @@ const About = () => {
               <div className="flex items-center">
                 <div className="w-3 h-3 rounded-full bg-blue-600 mr-2"></div>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Email:</strong> <a href="mailto:your.email@example.com" className="text-blue-600 dark:text-blue-400 hover:underline">your.email@example.com</a>
+                  <strong>Email:</strong> <a href="mailto:avadhutjagde05@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">avadhutjagde05@gmail.com</a>
                 </p>
               </div>
               
               <div className="flex items-center">
                 <div className="w-3 h-3 rounded-full bg-blue-600 mr-2"></div>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Location:</strong> Available Worldwide
+                  <strong>Location:</strong> Mumbai, Maharashtra
+                </p>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="w-3 h-3 rounded-full bg-blue-600 mr-2"></div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  <strong>Phone:</strong> <a href="tel:+917385514766" className="text-blue-600 dark:text-blue-400 hover:underline">+91 7385514766</a>
                 </p>
               </div>
               

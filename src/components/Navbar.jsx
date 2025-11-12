@@ -42,7 +42,7 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold text-blue-600 dark:text-blue-400"
         >
-          &lt;YourName /&gt;
+          &lt;Avadhut Jagde /&gt;
         </motion.div>
 
         {/* Mobile Menu Button */}

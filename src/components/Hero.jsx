@@ -50,10 +50,10 @@ const Hero = () => {
             <a href="https://github.com/avadhutFrontEnd" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
               <FaGithub size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/avadhut-jagde" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+            <a href="https://www.linkedin.com/in/avadhut-jagde-76571b220/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
               <FaLinkedin size={28} />
             </a>
-            <a href="https://twitter.com/avadhutFrontEnd" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+            <a href="https://x.com/AvadhutJagde" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
               <FaTwitter size={28} />
             </a>
           </div>

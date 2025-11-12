@@ -27,7 +27,7 @@ const Footer = () => {
                 <FaGithub size={24} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/avadhut-jagde" 
+                href="https://www.linkedin.com/in/avadhut-jagde-76571b220/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
@@ -36,7 +36,7 @@ const Footer = () => {
                 <FaLinkedin size={24} />
               </a>
               <a 
-                href="https://twitter.com/avadhutFrontEnd" 
+                href="https://x.com/AvadhutJagde" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
@@ -114,7 +114,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <FaLinkedin className="text-blue-600 dark:text-blue-400 mr-3" />
                 <a 
-                  href="https://www.linkedin.com/in/avadhut-jagde" 
+                  href="https://www.linkedin.com/in/avadhut-jagde-76571b220/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"
