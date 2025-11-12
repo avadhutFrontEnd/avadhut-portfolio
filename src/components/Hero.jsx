@@ -1,8 +1,32 @@
 // Hero.jsx
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import profileDark from '../assets/GitHub Profile(avadhutFrontEndDev) - Dark.png';
+import profileLight from '../assets/GitHub Profile(avadhutFrontEndDev) - Light.png';
 
 const Hero = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check if dark mode is active
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+    
+    // Initial check
+    checkDarkMode();
+    
+    // Watch for changes
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="home" className="min-h-screen flex items-center py-20 bg-gradient-to-br from-white to-blue-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -46,18 +70,51 @@ const Hero = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full md:w-1/2 flex justify-center"
+          className="w-full md:w-1/2 flex justify-center relative"
+          style={{
+            borderRadius: '1rem',
+            animation: 'glow-pulse 2s ease-in-out infinite'
+          }}
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
-            <div className="absolute inset-0 rounded-full bg-blue-600 dark:bg-blue-500 opacity-20 animate-pulse"></div>
-            <div className="absolute inset-4 rounded-full bg-blue-500 dark:bg-blue-400 opacity-20 animate-pulse animation-delay-500"></div>
-            <div className="absolute inset-8 rounded-full bg-blue-400 dark:bg-blue-300 opacity-20 animate-pulse animation-delay-1000"></div>
-            <div className="absolute inset-12 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center">
-              <span className="text-6xl">👨‍💻</span>
-              {/* Alternative: use an actual image of yourself */}
-              {/* <img src="/assets/profile.jpg" alt="Your Name" className="rounded-full" /> */}
+          {/* Browser Window Mockup */}
+          <motion.div 
+            className="w-full max-w-4xl relative z-10"
+            style={{ transform: 'scale(1.1)' }}
+            animate={{ 
+              y: [0, -10, 0],
+            }}
+            
+          >
+    
+            {/* Browser Chrome */}
+            <div className="bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-t-xl px-4 py-3 flex items-center space-x-2 shadow-lg relative z-10"
+            
+            >
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 rounded-full bg-red-500 shadow-sm"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500 shadow-sm"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500 shadow-sm"></div>
+              </div>
+              <div className="flex-1 mx-4">
+                <div className="bg-white dark:bg-gray-600 rounded-lg px-4 py-1.5 text-xs text-gray-600 dark:text-gray-300 shadow-inner border border-gray-200 dark:border-gray-500">
+                  github.com/avadhutFrontEnd
+                </div>
+              </div>
             </div>
-          </div>
+            
+            {/* GitHub Dashboard Screenshot - no padding, image fills entire area */}
+            <div className="bg-white dark:bg-gray-800 rounded-b-xl shadow-2xl overflow-hidden border-x border-b border-gray-200 dark:border-gray-700 relative z-10">
+              <motion.img 
+                src={isDarkMode ? profileDark : profileLight}
+                alt="GitHub Dashboard - avadhutFrontEnd" 
+                className="w-full h-auto object-cover select-none block"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                key={isDarkMode ? 'dark' : 'light'}
+              />
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
