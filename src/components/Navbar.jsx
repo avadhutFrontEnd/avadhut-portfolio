@@ -60,7 +60,6 @@ const Navbar = () => {
           className="hidden md:flex items-center space-x-8"
         >
           <a href="#home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Home</a>
-          <a href="#about" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">About</a>
           <a href="#skills" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Skills</a>
           <a href="#projects" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Projects</a>
           <a href="#contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Contact</a>
@@ -83,7 +82,6 @@ const Navbar = () => {
         >
           <div className="flex flex-col py-4 px-4 space-y-4">
             <a href="#home" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#about" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>About</a>
             <a href="#skills" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Skills</a>
             <a href="#projects" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Projects</a>
             <a href="#contact" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Contact</a>
