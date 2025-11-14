@@ -62,6 +62,7 @@ const Navbar = () => {
           <a href="#home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Home</a>
           <a href="#skills" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Skills</a>
           <a href="#projects" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Projects</a>
+          <a href="#ui-designs" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">UI Designs</a>
           <a href="#contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 transition-colors">Contact</a>
           <button 
             onClick={toggleDarkMode} 
@@ -84,6 +85,7 @@ const Navbar = () => {
             <a href="#home" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Home</a>
             <a href="#skills" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Skills</a>
             <a href="#projects" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Projects</a>
+            <a href="#ui-designs" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>UI Designs</a>
             <a href="#contact" className="text-gray-700 dark:text-gray-200" onClick={() => setIsOpen(false)}>Contact</a>
             <button 
               onClick={toggleDarkMode} 

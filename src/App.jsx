@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import UIDesigns from './components/UIDesigns';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AOS from 'aos';
@@ -26,6 +27,7 @@ function App() {
         <Hero />
         <Skills />
         <Projects />
+        <UIDesigns />
         <Contact />
       </main>
       <Footer />
